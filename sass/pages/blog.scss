@@ -2,16 +2,9 @@
 @import "../../sass/abstracts/variables";
 @import "../global";
 
-// @font-face {
-//   font-family: 'Lato';
-//   src: url("Lato/Lato-Regular.ttf");
-// }
-:root {
-  --bg: #f9f8f7;
-  --bg_default: white;
-  --h_color: #0f1826;
-  --text_color: #607987;
-  --bg_header: #f9f8f7;
+
+body{
+    background: var(--bg_default);
 }
 .breadcrump {
   height: 86px;
@@ -37,6 +30,7 @@
 }
 
 .ap {
+  margin-bottom: 150px;
   &__list__custom {
     display: flex;
     align-items: center;
@@ -53,8 +47,8 @@
         display: flex;
         align-items: center;
         text-align: center;
-        color: rgba(0, 0, 0, 0.7);
-        background: #f7f7f5;
+        color: var(--h_color);
+        background: var(--bg);
         border-radius: 32px;
       }
       .ap-tab-link.active-tab {
@@ -63,25 +57,25 @@
       }
     }
   }
-  .ap-tab-content{
-      margin-top: 40px;
-      .wrapper{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        @include media(768px){
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-        }
-        @include media(450px){
-            grid-template-columns: 1fr;
-            gap: 25px;
-        }
+  .ap-tab-content {
+    margin-top: 40px;
+    .wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      @include media(768px) {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+      }
+      @include media(450px) {
+        grid-template-columns: 1fr;
+        gap: 25px;
+      }
     }
     .card {
       cursor: pointer;
-    //   height: 640px;
+      //   height: 640px;
       max-width: 400px;
-      background-color: white;
+      background-color: var(--bg_default);
 
       .card-img-container {
         overflow: hidden;
@@ -102,17 +96,14 @@
         height: 242px;
         max-width: 420px;
         padding: 30px;
-        font-family: "Poppins";
-        color: rgb(0, 0, 0);
+        color: var(--h_color);
         border-radius: 15px;
-        font-family: "Poppins";
         span {
           -webkit-font-smoothing: antialiased;
           text-transform: uppercase;
           font-weight: 700;
           font-size: 14px;
           position: relative;
-          font-family: "Poppins";
         }
         .fade-out {
           padding: 5px, 13px, 5px, 12px;
@@ -126,11 +117,12 @@
           outline: none;
           border: none;
           border-radius: 5px;
+          cursor: pointer;
         }
       }
-      .img2{
+      .img2 {
         background: url("../../image/blog/app-img-2.png") center center
-          no-repeat ;
+          no-repeat;
         background-size: cover;
         transition: 0.45s ease all;
         background-size: 150%;
@@ -138,28 +130,28 @@
         max-width: 420px;
         border-radius: 15px;
       }
-      .img3{
+      .img3 {
         background: url("../../image/blog/app-img-3.png") center center
           no-repeat;
         background-size: cover;
         transition: 0.45s ease all;
         background-size: 150%;
       }
-      .img4{
+      .img4 {
         background: url("../../image/blog/app-img-4.png") center center
           no-repeat;
         background-size: cover;
         transition: 0.45s ease all;
         background-size: 150%;
       }
-      .img5{
+      .img5 {
         background: url("../../image/blog/app-img-5.png") center center
           no-repeat;
         background-size: cover;
         transition: 0.45s ease all;
         background-size: 150%;
       }
-      .img6{
+      .img6 {
         background: url("../../image/blog/app-img-6.png") center center
           no-repeat;
         background-size: cover;
@@ -172,7 +164,7 @@
         // justify-content: space-between;
         height: 205px;
         .card_body_info {
-           margin: 20px 0;
+          margin: 20px 0;
           display: flex;
           justify-content: space-between;
           align-items: center;
@@ -182,9 +174,9 @@
             font-size: 14px;
             line-height: 17px;
             letter-spacing: -0.28px;
-            color: rgba(0, 0, 0, 0.35);
+            color: var(--h_color);
           }
-          .view{
+          .view {
             gap: 5px;
             display: flex;
             align-items: center;
@@ -196,7 +188,7 @@
           font-size: 18px;
           line-height: 27px;
           align-items: center;
-          color: #000000;
+          color: var(--h_color);
           max-width: 298px;
         }
         p {
@@ -205,8 +197,7 @@
           font-weight: 500;
           font-size: 16px;
           line-height: 28px;
-          color: #5b5b5b;
-          
+          color: var(--text_color);
         }
 
         // p > b {
@@ -247,42 +238,63 @@
           }
         }
       }
-    }  
+    }
     .card-img-container:hover .card-img,
     .card-img1,
     .card-img2,
     .card-img3 {
       background-size: 175%;
     }
-      .content1{
-        display: grid !important;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 40px;
+    .content1 {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 40px;
+    }
+    .content2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 40px;
+    }
+    .content3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 40px;
+    }
+    .content4 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 40px;
+    }
+    .content5 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 40px;
+    }
+    .content6 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 40px;
+    }
+  }
+  .view_button {
+    margin-top: 48px;
+    width: 100%;
+    text-align: center;
+    .more_view {
+      padding: 13px 46px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 22px;
+      color: #fff;
+      background: #ba8d5b;
+      border-radius: 100px;
+      transition: 0.3s ease-out;
+      &:hover {
+        transition: 0.3s ease-out;
+        background: #a88053;
       }
-      .content2{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 40px;
-      }
-      .content3{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 40px;
-      }
-      .content4{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 40px;
-      }
-      .content5{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 40px;
-      }
-      .content6{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        margin-top: 40px;
-      }
+    }
   }
 }

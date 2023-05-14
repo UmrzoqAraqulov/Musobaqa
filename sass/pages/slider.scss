@@ -1,0 +1,65 @@
+@import "../abstracts/mixin";
+@import "../abstracts/variables";
+@import "../global";
+
+.slider {
+  margin-top: 145px;
+  .owl-carousel {
+    margin: 0 auto;
+    position: relative;
+    .item {
+        position: relative;
+        .icon{
+            position: absolute;
+            top: 15px;
+            left: 60px;
+            width: 150px;
+            height: 60px;
+            border-radius: 100px;
+            outline: none;
+            border: none;
+            background: #fff;
+            img{
+                margin-left: 10px;
+                padding: 20px;
+                width: 20px;
+                border-radius: 50%;
+                background: #BA8D5B;
+            }
+
+        }
+      
+      span {
+        // border: 1px solid black;
+        position: absolute;
+        bottom: 0.25rem;
+        // top: 10px;
+        left: 2.7rem;
+        width: calc(100% - 5.5rem);
+        height: calc(100% - 0.5rem);
+        background: linear-gradient(
+          180deg,
+          transparent -9.66%,
+          rgba(0, 0, 0, 0.37) 69.5%,
+          rgba(0, 0, 0, 0.65) 90.34%
+        );
+        border-radius: 1.375rem;
+        z-index: 1;
+      }
+      text-align: center;
+      margin: 0 auto;
+      video {
+       
+        border-radius: 20px;
+        height: 393px;
+        width: 230px;
+      }
+    }
+    .item.active{
+        span {
+            display: none;
+           
+          }
+    }
+  }
+}

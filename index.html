@@ -1,19 +1,84 @@
- <!DOCTYPE html>
- <html lang="en">
- <head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Najot Ta'lim</title>
-    <link rel="icon" href="image/icon.png">
-    <link rel="stylesheet" href="css/home.css">
- </head>
- <body>
-    <p class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae minima, suscipit, sed et placeat ex possimus aliquid provident laborum omnis voluptatum?
-    </p>
+    <link rel="icon" href="image/imageHomePage/icon.png">
+    <link rel="stylesheet" href="sass/pages/home.css">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+   
+    <div class="nav">
+        <div class="container">
+            <div class="nav_left">
+                <a href="index.html">
+                    NAJOT
+                    <img src="image/imageHomePage/icon.png" alt="">
+                    TA'LIM
+                </a>
+            </div>
+            <div class="nav_right">
+                <input type="checkbox" id="check">
+                <ul class="nav_right_list">
+                    <li>
+                        <a href="#">Kurslar</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <label for="check" class="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </ul>
+                <!-- <div class="mobile">
+                    <ul class="list">
+                        <li>
+                            <a href="#">Kurslar</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div> -->
+                <button class="btn">Kirish</button>
+                <i id="icon" class="fa-solid fa-moon"></i>
+                <label for="check" class="open">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="header_left">
+                <h2>
+                    Kasblarni <span>onlayn</span> o'rganing
+                </h2>
+                <p>
+                    O.zingizga qulay vaqtda, joyda va uslubda zamonaviy kasblarni o'rganing.
+                </p>
+                <a class="link" href="#">Kurslarni ko'rish</a>
+            </div>
+            <div class="header_right">
+                <img src="image/imageHomePage/header.png" alt="">
+            </div>
+        </div>
+    </div>
 
     <script src="js/app.js"></script>
- </body>
- </html>
+</body>
+
+</html>

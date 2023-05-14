@@ -4,12 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Blog</title>
     <link rel="stylesheet" href="css/blog.min.css" />
     <!-- <link rel="stylesheet" href=""> -->
   </head>
   <body>
     <!-- NAGVIGATION START -->
+    <div class="nav">
+        <div class="container">
+            <div class="nav_left">
+                <a href="index.html">
+                    NAJOT
+                    <img src="image/imageHomePage/icon.png" alt="">
+                    TA'LIM
+                </a>
+            </div>
+            <div class="nav_right">
+                <input type="checkbox" id="check">
+                <ul class="nav_right_list">
+                    <li>
+                        <a href="#">Kurslar</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+
+                    <label for="check" class="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                </ul>
+                <!-- <div class="mobile">
+                    <ul class="list">
+                        <li>
+                            <a href="#">Kurslar</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+
+                        </li>
+                    </ul>
+                </div> -->
+                <button class="btn">Kirish</button>
+                <i id="icon" class="fa-solid fa-moon"></i>
+                <label for="check" class="open">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+            </div>
+        </div>
+    </div>
     <!-- NAGVIGATIONE END -->
 
     <!-- Breadcrump start -->
@@ -730,6 +777,8 @@
                 </div>
             </div>
             </div>
+        </div>
+        <div class="view_button"><a class="more_view" href="0#">Ko'proq ko'rish</a></div>
         </div>
       </section>
     </main>
