@@ -1,0 +1,26 @@
+// GRID UCHUN MIXIN
+@mixin grid($cols, $gap) {
+    display: grid;
+    grid-template-columns: repeat($cols, 1fr);
+    grid-gap: $gap;
+}
+
+// Mixin for Flexbox
+@mixin flexbox($direction: row, $justify: flex-start, $align: stretch) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin media($size) {
+    @media only screen and (max-width: $size) {
+        @content;
+    }
+}
+
+// px to rem
+@mixin px-to-rem($px-value, $base-font-size: 16px) {
+    $rem-value: $px-value / $base-font-size;
+    font-size: $rem-value * 1rem;
+}
