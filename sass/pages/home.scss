@@ -1,0 +1,19 @@
+@use "../abstracts/mixin" as mx;
+@use "../abstracts/variables" as vr;
+@import "../global";
+
+:root {
+    --bg:  #F9F8F7;
+    --bg_default:  white;
+    --h_color:#0F1826;
+    --text_color:#607987;
+    --bg_header:#F9F8F7;
+}
+
+.dark{
+    --bg: #0F1826;
+    --bg_default:  #021923;
+    --h_color:white;
+    --color_dark: white;
+    --bg_surov_dark: #F9F8F73B;
+}

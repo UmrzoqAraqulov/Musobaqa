@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media (max-width: 1300px) {
+  .container {
+    width: 86%;
+  }
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("Lato/Lato-Regular.ttf");
+}
+* {
+  font-family: "Lato";
+}
+
+:root {
+  --bg: #F9F8F7;
+  --bg_default: white;
+  --h_color:#0F1826;
+  --text_color:#607987;
+  --bg_header:#F9F8F7;
+}
+
+.dark {
+  --bg: #0F1826;
+  --bg_default: #021923;
+  --h_color:white;
+  --color_dark: white;
+  --bg_surov_dark: #F9F8F73B;
+}
+
+/*# sourceMappingURL=home.css.map */
