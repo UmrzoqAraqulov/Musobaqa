@@ -1,5 +1,6 @@
 :root {
     --bg:  #F9F8F7;
+    --bg_header:  #F9F8F7;
     --bg_default:  white;
     --h_color:#0F1826;
     --text_color:#607987;
@@ -14,6 +15,7 @@
 
 .dark{
     --bg: #0F1826;
+    --bg_header:  #09111B;
     --bg_default:  #021923;
     --h_color:white;
     --text_color: white;
@@ -22,5 +24,4 @@
     --col_icon:white;
     --col_icon_hover :white;
     --bg_icon :#272727;
-    --bg_icon_active :#BD8F5B;
 }

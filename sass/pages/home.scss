@@ -3,5 +3,50 @@
 @import "../global";
 
 
-
+.header{
+    background: var(--bg_header);
+    height: calc(100vh - 82px);
+    display: flex;
+    align-items: center;
+    .container{
+        background: url(../../image/imageHomePage/header.png);
+        background-size: 120% 100%;
+    }
+    &_left{
+        width: 40%;
+        h2{
+            font-size: 60px;
+            color: var(--h_color);
+            span{
+                color: #BA8D5B;
+            }
+            line-height: 60px;
+            font-weight: bold;
+        }
+        p{
+            font-size: 18px;
+            padding: 20px 0px;
+            color: var(--text_color);
+            width: 80%;
+            font-weight: 600;
+        }
+        .link{
+            padding: 12px 30px;
+            border-radius: 50px;
+            margin-top: 40px;
+            display: inline-block;
+            background: #BD8F5B;
+            color: white;
+            border: 1.5px solid #E5E7EA;
+            &:hover{
+                background: #F5F5F5;
+                border-color: #BA8D5B;
+                color: black;
+            }
+        }
+    }
+    &_right{
+        display: none;
+    }
+}
 
