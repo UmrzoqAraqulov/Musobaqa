@@ -1,0 +1,126 @@
+:root {
+  --bg: #F9F8F7;
+  --bg_default: white;
+  --h_color:#0F1826;
+  --text_color:#607987;
+  --bg_surov: #F9F8F7;
+  --yunalish_text:#607987;
+  --bg_icon:#fdfdfd;
+  --col_icon:#555555;
+  --col_icon_hover:#000000;
+  --col_icon_active:white;
+  --bg_icon_active:#BD8F5B;
+}
+
+.dark {
+  --bg: #0F1826;
+  --bg_default: #021923;
+  --h_color:white;
+  --text_color: white;
+  --bg_surov: #F9F8F73B;
+  --yunalish_text:#BBE7FF;
+  --col_icon:white;
+  --col_icon_hover:white;
+  --bg_icon:#272727;
+  --bg_icon_active:#BD8F5B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media (max-width: 1300px) {
+  .container {
+    width: 86%;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    width: 92%;
+  }
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("Lato/Lato-Regular.ttf");
+}
+* {
+  font-family: "Lato";
+}
+
+.nav {
+  padding: 20px 0px;
+  background: var(--bg);
+}
+.nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav #check, .nav .open, .nav .close {
+  display: none;
+}
+.nav_left a {
+  color: var(--h_color);
+  font-size: 21px;
+  display: flex;
+  align-items: center;
+}
+.nav_left a img {
+  width: 70px;
+  padding: 0px 4px;
+}
+.nav_right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav_right_list {
+  display: flex;
+  gap: 20px;
+}
+.nav_right_list li a {
+  color: var(--h_color);
+  font-size: 18px;
+}
+.nav_right_list li a:hover {
+  border-bottom: 1.5px solid var(--h_color);
+}
+.nav_right .btn {
+  padding: 10px 40px;
+  background: white;
+  border-radius: 30px;
+  border: 1.2px solid transparent;
+  font-size: 16px;
+  transition: 0.5s;
+}
+.nav_right .btn:hover {
+  border-color: #BD8F5B;
+}
+.nav_right #icon {
+  padding: 8px 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  background: var(--bg_icon);
+  color: var(--col_icon);
+}
+.nav_right #icon:hover {
+  color: var(--col_icon_hover);
+}
+.nav_right #icon:active {
+  color: var(--col_icon_active);
+  background: var(--bg_icon_active);
+}/*# sourceMappingURL=home.css.map */

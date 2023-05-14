@@ -1,3 +1,21 @@
+:root {
+  --bg: #F9F8F7;
+  --bg_default: white;
+  --h_color:#0F1826;
+  --text_color:#607987;
+  --bg_surov: #F9F8F7;
+  --yunalish_text:#607987;
+}
+
+.dark {
+  --bg: #0F1826;
+  --bg_default: #021923;
+  --h_color:white;
+  --text_color: white;
+  --bg_surov: #F9F8F73B;
+  --yunalish_text:#BBE7FF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -29,20 +47,19 @@ a {
   font-family: "Lato";
 }
 
-:root {
-  --bg: #F9F8F7;
-  --bg_default: white;
-  --h_color:#0F1826;
-  --text_color:#607987;
-  --bg_header:#F9F8F7;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
-.dark {
-  --bg: #0F1826;
-  --bg_default: #021923;
-  --h_color:white;
-  --color_dark: white;
-  --bg_surov_dark: #F9F8F73B;
+.nav_left a {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+.nav_left a img {
+  width: 50px;
+  padding: 0px 4px;
 }
 
 /*# sourceMappingURL=home.css.map */
