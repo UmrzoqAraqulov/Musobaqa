@@ -1,0 +1,141 @@
+@import "../global";
+@import "../abstracts/variables";
+
+body{
+    background: var(--bg_default);
+}
+.flex {
+    display: flex;
+    gap: 40px;
+
+    .box {
+        background: #F9F8F7;
+        width: 50%;
+        padding: 15px;
+
+        .f {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+
+            .colo {
+                color: #BA8D5B;
+            }
+        }
+
+        .fl2 {
+            display: flex;
+            gap: 30px;
+        }
+    }
+}
+
+@media (max-width: 1015px) {
+    .flex {
+        .box {
+            .f {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .fl2 {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 950px) {
+    .flex {
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: auto;
+
+        .box {
+            width: 100%;
+
+            .f {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .fl2 {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 950px) {
+    .flex {
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        margin: auto;
+
+        .box {
+            width: 96%;
+
+            .f {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+            }
+
+            .fl2 {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+
+}
+
+@media (max-width: 950px) {
+    .flex {
+        flex-direction: column;
+        justify-content: center;
+        width: 95%;
+        margin: auto;
+
+        .box {
+            width: 96%;
+
+            .f {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+
+                .d {
+                    display: none;
+                }
+            }
+
+            .fl2 {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+            }
+        }
+    }
+}
+
+@import "../layout/footer"

@@ -2,35 +2,45 @@
 @import "../abstracts/variables";
 @import "../global";
 
+body {
+    background: var(--bg_default);
+}
 
-.header{
+.header {
     background: var(--bg_header);
     height: calc(100vh - 82px);
     display: flex;
     align-items: center;
-    .container{
-        background: url(../../image/imageHomePage/header.png);
-        background-size: 120% 100%;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
     }
-    &_left{
-        width: 40%;
-        h2{
-            font-size: 60px;
+
+    &_left {
+        width: 35%;
+
+        h2 {
+            font-size: 50px;
             color: var(--h_color);
-            span{
+
+            span {
                 color: #BA8D5B;
             }
-            line-height: 60px;
+
+            line-height: 50px;
             font-weight: bold;
         }
-        p{
+
+        p {
             font-size: 18px;
             padding: 20px 0px;
             color: var(--text_color);
-            width: 80%;
+            width: 100%;
             font-weight: 600;
         }
-        .link{
+
+        .link {
             padding: 12px 30px;
             border-radius: 50px;
             margin-top: 40px;
@@ -38,15 +48,157 @@
             background: #BD8F5B;
             color: white;
             border: 1.5px solid #E5E7EA;
-            &:hover{
+
+            &:hover {
                 background: #F5F5F5;
                 border-color: #BA8D5B;
                 color: black;
             }
         }
     }
-    &_right{
-        display: none;
+    position: relative;
+    overflow: hidden;
+    &_right {
+        position: absolute;
+        bottom: 30px;
+        right: -8%;
+        width: 72%;
+
+        img {
+            width: 100%;
+        }
+    }
+    @media (max-width:970px){
+        &_left{
+            width: 40%;
+            z-index: 1;
+        }
+        &_right{
+            width: 80%;
+        }
+    }
+    @media (max-width:970px){
+        &_left{
+            width: 60%;
+        }
+        &_right{
+            display: none;
+        }
+    }
+    @media (max-width:600px){
+        &_left{
+            width: 80%;
+            h2{
+                font-size: 44px;
+                line-height: auto;
+            }
+            p{
+                font-size: 16px;
+            }
+        }
+        .link{
+            font-size: 14px;
+            padding: 10px 20px;
+        }
     }
 }
 
+
+.sec1 {
+    padding: 40px 0px;
+
+    h2 {
+        font-size: 32px;
+        color: var(--h_color);
+        font-weight: 800;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 20px;
+        padding: 30px 0px 20px;
+        .card {
+            width: 47%;
+            display: flex;
+            gap: 20px;
+            img{
+                width: 40px;
+                height: 40px;
+            }
+            .text{
+                h3{
+                    color: var(--h_color);
+                    font-weight: 600;
+                    font-size: 20px
+                }
+                p{
+                    color: var(--text_color);
+                    font-size: 14px;
+                    font-weight: 400;
+                    padding: 10px 0px;
+                }
+
+            }
+        }
+    }
+    .icon{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        p{
+            color: #0EB182;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        i{
+            color: var(--drop_color);
+            font-size: 22px
+        }
+    }
+    @media(max-width:620px){
+        h2{
+            font-size: 26px;
+        }
+        .cards{
+            .card{
+                width: 80%;
+                .text{
+                    h3{
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width:400px){
+        h2{
+            font-size: 22px;
+        }
+        .cards{
+            .card{
+                width: 100%;
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+                .text{
+                    h3{
+                        font-size: 16px;
+                    }
+                    p{
+                        font-size: 13px
+                    }
+                }
+            }
+        }
+        .icon{
+            p{
+                font-size: 14px
+            }
+        }
+    }
+}
+
+@import "../layout/footer";
